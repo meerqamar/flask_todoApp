@@ -46,6 +46,8 @@ Visit 👉 http://127.0.0.1:8000
 ## 📁 Project Structure
 
 ├── static/
+│   ├── test.js
+│   ├── style.css   
 ├── templates/
 │   ├── base.html
 │   ├── index.html
