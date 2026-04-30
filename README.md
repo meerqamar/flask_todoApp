@@ -39,8 +39,8 @@ pip install -r requirements.txt
 ### 4. Run the app
 python app.py
 
-Visit 👉 http://127.0.0.1:8000
-
+Visit 👉 
+https://flask-todo-app-sigma.vercel.app/
 ---
 
 ## 📁 Project Structure
