@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Todo{% endblock title %} <!-- FIX: Was "Home" -->
+
+{% block body %}
+
+<div class="container my-3">
+  <h2>Update Todo</h2>
+  <!-- FIX: form action now posts to the correct update route -->
+  <form action="/update/{{ todo.sno }}" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Todo Title</label>
+      <!-- FIX: Pre-filled with existing todo data -->
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        value="{{ todo.title }}"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Todo Description</label>
+      <!-- FIX: Pre-filled with existing todo data -->
+      <input
+        type="text"
+        class="form-control"
+        id="desc"
+        name="desc"
+        value="{{ todo.desc }}"
+      />
+    </div>
+    <button type="submit" class="btn btn-outline-dark">Update</button>
+    <a href="/" class="btn btn-outline-secondary ms-2">Cancel</a>
+  </form>
+</div>
+
+{% endblock body %}
